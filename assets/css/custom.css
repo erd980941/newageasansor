@@ -1,0 +1,279 @@
+/*HEADER*/
+/*NAVBAR*/
+#header #navbar ul li a i {
+  font-size: 20px;
+}
+
+/* HERO */
+#hero {
+  position: relative;
+  background-image: linear-gradient(rgba(55, 81, 126, 1), rgba(55, 81, 126, 0.6)), url('../img/head-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+#hero .btn-get-started {
+  display: flex;
+  align-items: center;
+}
+
+/* BREADCRUMB */
+#breadcrumbs {
+  margin-top: 72.5px;
+}
+
+
+
+/* PORTFOLİO */
+#portfolio .portfolio-item .portfolio-info {
+  opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-info .preview-link {
+  right: 10px;
+}
+
+
+/* OUR-DOCUMENT */
+#our-document .document-card {
+  width: 100%;
+  /* box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1); */
+  padding: 80px 20px;
+  transition: .4s;
+  text-align: center;
+  background: #f3f5fa;
+  transition: .4s;
+}
+
+#our-document .document-card .icon {
+  margin: 0 auto;
+  width: 78px;
+  height: 78px;
+  background-color: #23334e;
+  transition: .4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+#our-document .document-card:hover {
+  transform: translateY(-10px);
+  background-color: #23334e;
+}
+#our-document .document-card:hover p {
+  color: #bbbdc2;
+}
+#our-document .document-card:hover h4 {
+  color: #f3f5fa;
+}
+
+#our-document .document-card:hover .icon {
+  border: 2px solid #5eb0d6;
+}
+
+#our-document .document-card .icon i {
+  color: #5eb0d6;
+  font-size: 36px;
+  transition: .4s;
+  z-index: 2;
+}
+
+#our-document .document-card h4 {
+  font-weight: 700;
+  color: #23334e;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+#our-document a:hover {
+  cursor: pointer;
+}
+
+
+
+
+/* FOOTER */
+#footer .footer-top {
+  background-color: #f3f5fa;
+}
+
+
+
+
+
+/* ASANSORLER */
+#asansorler .card h2 {
+  font-size: 2.25rem;
+  font-family: "Montserrat", sans-serif;
+  ;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.1;
+}
+
+#asansorler .card p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+}
+
+.flow>*+* {
+  margin-top: 2rem;
+}
+
+#asansorler .card {
+  display: grid;
+  place-items: center;
+  /* max-width: 21.875rem;
+  height: 28.125rem; */
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  transition: .3s;
+}
+
+#asansorler .card>* {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#asansorler .card-background {
+  object-fit: cover;
+  max-width: 100%;
+  height: 518px;
+}
+
+#asansorler .card-content {
+  --flow-space: 0.9375rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%);
+}
+
+#asansorler .card-content-container {
+  --flow-space: 1.25rem;
+}
+
+#asansorler .card-title {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+  /* Prefijo necesario para Firefox  */
+}
+
+#asansorler .card-title::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: #37517e;
+}
+#asansorler .card-description {
+  width: 100%;
+}
+
+#asansorler .card-button {
+  padding: 0.55em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content;
+  letter-spacing: 2px;
+  /* Prefijo necesario para Firefox  */
+  border-radius: 0.45em;
+  border: none;
+  background-color: #23334e;
+  font-family: "Montserrat", sans-serif;
+  ;
+  font-size: 1.125rem;
+  color: white;
+  margin-bottom: 1rem;
+  transition: .4s;
+}
+
+#asansorler .card-button:hover {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  #asansorler .card-content {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  #asansorler .card-title::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  #asansorler .card-background {
+    transition: transform 500ms ease-in;
+  }
+
+  #asansorler .card-content-container> :not(.card-title),
+  #asansorler .card-button {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  #asansorler .card:hover,
+  #asansorler .card:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  #asansorler .card:hover .card-content,
+  #asansorler .card:focus-within .card-content {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  #asansorler .card:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  #asansorler .card:hover .card-background,
+  #asansorler .card:focus-within .card-background {
+    transform: scale(1.3);
+  }
+
+  #asansorler .card:hover .card-content-container> :not(.card-title),
+  #asansorler .card:hover .card-button,
+  #asansorler .card:focus-within .card-content-container> :not(.card-title),
+  #asansorler .card:focus-within .card-button {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  #asansorler .card:hover .card-title::after,
+  #asansorler .card:focus-within .card-title::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
